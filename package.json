@@ -1,17 +1,17 @@
 {
-  "name": "nodejs-complete-guide",
+  "name": "Kwesha",
   "version": "1.0.0",
-  "description": "Complete Node.js Guide",
+  "description": "A Nodejs app",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app.js",
     "start-server": "node app.js"
   },
-  "author": "Maximilian Schwarzmüller",
+  "author": "Algo Coder",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^1.18.3"
+    "nodemon": "^2.0.15"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
