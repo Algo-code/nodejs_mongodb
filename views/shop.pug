@@ -15,4 +15,21 @@ html(lang="en")
                         a.active(href="/") Shop 
                     li.main-header__item
                         a(href="/admin/add-product") Add Product
-    
+        main 
+            if prods.length > 0
+                ul
+                    each prod in prods
+                        a.card(href="")
+                            img(src="https://www.designwizard.com/wp-content/uploads/2019/07/29-The-smallest-thing-Lisa-Manterfield-Book-Cover-Ideas.jpg" class="card__image", alt="")
+                            .card__overlay
+                                .card__header
+                                    svg.card__arc(xmlns="http://www.w3.org/2000/svg")                    
+                                    //- img.card__thumb(src="https://i.imgur.com/7D7I6dI.png", alt="")
+                                    .card__header-text
+                                        h3.card__title #{prod.title}            
+                                        span.card__price $19.99
+                                p.card__description Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis.                
+                                button.btn Add to Cart
+
+            else 
+                h1 No Products Added Yet

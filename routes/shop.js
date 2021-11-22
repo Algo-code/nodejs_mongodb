@@ -8,7 +8,7 @@ const adminData = require('./admin');
 const router = express.Router();
 
 router.get('/', (req, res, next) => {
-  res.render('shop');
+  res.render('shop',{docTitle: 'shop', prods:adminData.products});
 });
 
 module.exports = router;
