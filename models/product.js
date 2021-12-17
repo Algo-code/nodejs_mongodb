@@ -18,8 +18,10 @@ const getProductsFromFile = cb => {
 };
 
 module.exports = class Product {
-  constructor(title, imageUrl, description, price) {
+  constructor(title, productID, imageUrl, description, price) {
+    productID = Math.floor(Math.random()*9999999999).toString();
     this.title = title;
+    this.productID = productID
     this.imageUrl = imageUrl;
     this.description = description;
     this.price = price;

@@ -17,6 +17,8 @@ block content
                             h2.product__price $19.99
                             p.product__description A very interesting book about so many even more interesting things!
                         .card__actions
+                            .details 
+                                a(href=`/product/`+ product.productID) Details
                             button.btn Add to Cart
         else
             h1 No Products
